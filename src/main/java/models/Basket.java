@@ -145,8 +145,6 @@ public class Basket {
         return totalEmissionsSaved;
     }
 
-
-
 //CALCULATE TOTAL DISTANCE OF THE PRODUCT TRAVEL
     public Double calculateTotalMileageForBasket() {
         Double totalMileageBasket = 0.00;
@@ -158,8 +156,6 @@ public class Basket {
     }
 
 
-
-
 //OTHER BASKET FUNCTIONS
     public void addAllProductsOrderedToBasket(ArrayList<Product> productsOrdered) {
         for (Product productOrdered : productsOrdered) {
@@ -168,8 +164,6 @@ public class Basket {
             DBHelper.update(productOrdered);
         }
     }
-
-
 
     public Double calculate£TotalForBasket() {
         Double basketTotal = 0.00;

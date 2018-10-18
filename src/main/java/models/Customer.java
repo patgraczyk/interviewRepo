@@ -111,7 +111,6 @@ public class Customer {
     }
 
 
-
     public HashMap< Integer, List<Product>> giveMeBasketsWithProducts (){
         HashMap <Integer, List<Product>> tempHash  = new HashMap<>();
         List<Basket> customersBaskets = DBCustomer.allBaskets(this);
@@ -125,35 +124,5 @@ public class Customer {
         }
         return tempHash;
     }
-
-//    TODO FIX SHOW.VTL - RIGHT NOW SHOWS ONLY ONE PRODUCT
-
-
-
-
-
-
-
-
-//
-//    public double emissionsOfProductsInBasket(){
-//        double totalEmissions =0;
-//        for (Product product : productsInBasket){
-//            totalEmissions += product.emissionsOfProduct();
-//        }
-//        return totalEmissions;
-//    }
-//
-
-
-//
-//    public void addEnvironmentalInfo(String key, String value){
-//        this.environmetnInfo.put(key, value);
-//    }
-//
-//    public void removeFromEnvironemtnalInfo(String key){
-//        this.environmetnInfo.remove(key);
-//    }
-
 
 }
