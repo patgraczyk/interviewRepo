@@ -22,6 +22,7 @@ public class Runner {
         DBHelper.save(farm_1);
         DBHelper.save(farm_2);
         DBHelper.save(farm_3);
+        System.out.println("Saved farms in db...");
 
 
         Customer customer_1 = new Customer ("Pat", "Edinburgh", shop);
@@ -30,6 +31,8 @@ public class Runner {
         DBHelper.save(customer_1);
         DBHelper.save(customer_2);
         DBHelper.save(customer_3);
+        System.out.println("Saved customers in db...");
+
 
         Product product_1 = new Product("Mary Rose potatoes", GroupType.TUBERS, TagType.ORGANIC,1, farm_1, shop, 2.4);
         Product product_2 = new Product("Jones potatoes ", GroupType.TUBERS, TagType.ORGANIC,1.5, farm_2, shop, 2.0);
@@ -39,6 +42,8 @@ public class Runner {
         DBHelper.save(product_2);
         DBHelper.save(product_3);
         DBHelper.save(product_4);
+        System.out.println("Saved products in db...");
+
 
 
         Basket basket_1 = new Basket(customer_1);
@@ -51,6 +56,8 @@ public class Runner {
         basket_2.addToBasket(product_2);
         DBHelper.save(basket_2);
         DBHelper.save(basket_3);
+        System.out.println("Saved baskets in db...");
+
 
         List<Product> productsInBasket = DBBasket.findAllProductsOfThis(basket_1);
 
