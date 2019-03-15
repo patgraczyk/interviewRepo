@@ -24,7 +24,6 @@ public class DBHelper {
             transaction.rollback();
             e.printStackTrace();
         } finally {
-            session.close();
         }
     }
 
