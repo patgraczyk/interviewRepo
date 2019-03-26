@@ -23,8 +23,7 @@ public class DBHelper {
         } catch (HibernateException e) {
             transaction.rollback();
             e.printStackTrace();
-        } finally {
-            session.close();
+        } finally { session.close();
         }
     }
 
