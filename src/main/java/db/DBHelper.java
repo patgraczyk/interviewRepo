@@ -23,8 +23,8 @@ public class DBHelper {
         } catch (HibernateException e) {
             transaction.rollback();
             e.printStackTrace();
+ newBranchPat
         } finally { session.close();
-        }
     }
 
     public static void update(Object object){
