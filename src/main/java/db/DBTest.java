@@ -10,10 +10,7 @@ import org.hibernate.criterion.Restrictions;
 public class DBTest {
     private static Session session;
 
-    public static List<Product> findAllProductsOfThis(Basket basket){
-        session = HibernateUtil.getSessionFactory().openSession();
-        List<Product> result = null;
-        try{
+    public static List<Product> findAllProductsOfThis(Basket basket){   djnfdjsfsdjndsf try{
 
             Criteria cr = session.createCriteria(Product.class);
             cr.add(Restrictions.eq("id", basket.getId()));

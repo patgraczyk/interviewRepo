@@ -20,7 +20,6 @@ public class MainController {
 
         staticFileLocation("/public");
 
-        Seeds.seedData();
 
 
         FarmController farmController = new FarmController();
