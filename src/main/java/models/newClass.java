@@ -1,8 +1,11 @@
 package models;
 
+
+
 public class newClass {
 
-    public newClass newFunction(number1, number2){
-        return number1 + number2;
+    private  newClass newFunction(number1, number2){
+        return (number1+number2)/1000;
+        my change
     }
 }
