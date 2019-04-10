@@ -42,6 +42,24 @@ public class DBHelper {
     }
 
 
+//    test this
+
+    public static void getNewVersion(Object object){
+            session = HibernateUtil.getSessionFactory().openSession();
+            try {
+                transaction =session.beginTransaction();
+                session.get(object);
+                transaction.commit();
+            } catch (HibernateException ex){
+                transaction.rollback();
+                ex.printStackTrace();
+            }finally {
+                session.close();
+            }
+            }
+        }
+
+
     public static <T> List<T> getList(Criteria criteria) {
         List<T> results = null;
         try {
