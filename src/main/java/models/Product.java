@@ -162,8 +162,9 @@ public class Product {
         return (ConversionFactorPlastic.PET1.getConversionFactor() * 1 * this.getWeight())/1000;
     }
 
-
     public double getCalculation(){return emissionsOfConventionalProduct();}
+
+    public String getNameofCalculation(){return emissionsOfProductKG(price);}
 
 //    public double distance betweenaddresses(){
 //    totalMilageBasket = 0() {
