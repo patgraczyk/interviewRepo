@@ -163,7 +163,7 @@ public class Product {
     }
 
 
-
+    public double getCalculation(){return emissionsOfConventionalProduct();}
 
 //    public double distance betweenaddresses(){
 //    totalMilageBasket = 0() {
